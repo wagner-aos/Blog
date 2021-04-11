@@ -1,6 +1,9 @@
 # Steven Skelton's Blog
 <http://stevenskelton.ca/>
 
+
+http://stevenskelton.ca/multiplexed-services-in-finagle/
+
 This is a cumulative project for all blog entry scala classes.
 
 ## Blog Classes

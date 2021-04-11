@@ -2,13 +2,12 @@ retrieveManaged := true
 
 scalaVersion := "2.10.3"
 
-EclipseKeys.withSource := true
+//EclipseKeys.withSource := true
 
-resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/maven-releases"
+resolvers += "Typesafe Releases" at "https://repo.typesafe.com/typesafe/maven-releases"
+resolvers += "Twttr" at "https://maven.twttr.com/"
 
-resolvers += "Twttr" at "http://maven.twttr.com/"
-
-newSettings
+//newSettings
 
 libraryDependencies ++= Seq(
 	"org.apache.thrift" % "libthrift" % "0.9.1",
@@ -18,5 +17,6 @@ libraryDependencies ++= Seq(
 	"com.twitter" %% "scrooge-runtime" % "3.11.2",
 	"com.twitter" %% "scrooge-generator" % "3.11.2",
 	"org.specs2" %% "specs2" % "2.3.7" % "test",
-	"junit" % "junit" % "4.11" % "test"
+	"junit" % "junit" % "4.11" % "test",
+	"org.apache.spark" %% "spark-core" % "1.2.0"
 )
